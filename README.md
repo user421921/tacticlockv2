@@ -11,7 +11,7 @@ You can set your own callsign (or name) by adding the following to the end of th
 
 **Example:**  
 
-https://path.to.clock.com/index.html?callsign=EX4MPL
+[https://path.to.clock.com/index.html?callsign=EX4MPL](https://user421921.github.io/tacticlockv2/index.html?callsign=ex4mpl)
 
 ---
 
