@@ -1,14 +1,31 @@
-# tacticlockv2
-BLUF: Ham clock alternative that is simplier and only shows the data I personnally need. 
+# 📟 TactiClock v2  
 
-Modify your callsign or name (get your damn tech ticket its not that hard) by adding:
+**BLUF:** A no-frills, tactical-style ham clock alternative that only shows the data *I* actually need.  
 
-?callsign=XXXXXX
+---
 
-for example
+## 🔧 Customizing Your Callsign  
+You can set your own callsign (or name) by adding the following to the end of the URL:  
 
-https://path.to.clock.com/index.html?callsign=ex4mpl
+?callsign=YOURCALL
 
-Feel free to edit and redistribute. I challaenge you to make my design even better. I don't care if you give me credit. Don't sell in any form. 1s and 0s should be free.
+**Example:**  
 
-73
+https://path.to.clock.com/index.html?callsign=EX4MPL
+
+---
+
+## 🛠 Philosophy  
+This project is intentionally **simple** — no clutter, no extra fluff.  
+- Feel free to edit, fork, and redistribute.  
+- I challenge you to make the design even better.  
+- No need to credit me.  
+- Absolutely **no selling** — 1s and 0s should be free.  
+
+---
+
+## 📡 Final Words  
+Get your ham license (seriously, the Tech ticket isn’t that hard).  
+See you on the air.  
+
+**73**  
