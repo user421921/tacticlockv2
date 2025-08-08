@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UTC-7 Tactical Clock</title>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color:  transparent;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: red;
+      font-family: 'Black Ops One', sans-serif;
+      text-align: center;
+    }
+    #date {
+      font-size: 4vw;
+      margin-bottom: 5px;
+    }
+    #clock {
+      font-size: 15vw;
+    }
+  </style>
+</head>
+<body>
+  <div id="date">-- -- --- ----</div>
+  <div id="clock">--:--:--</div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const utcMinus7 = new Date(now.getTime() - (7 * 60 * 60 * 1000));
+
+      const h = String(utcMinus7.getUTCHours()).padStart(2, '0');
+      const m = String(utcMinus7.getUTCMinutes()).padStart(2, '0');
+      const s = String(utcMinus7.getUTCSeconds()).padStart(2, '0');
+      document.getElementById('clock').textContent = `${h}:${m}:${s}`;
+
+      const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      const weekday = weekdays[utcMinus7.getUTCDay()];
+      const day = utcMinus7.getUTCDate();
+      const month = months[utcMinus7.getUTCMonth()];
+      const year = utcMinus7.getUTCFullYear();
+      document.getElementById('date').textContent = `${weekday} ${day} ${month} ${year}`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+</html>
