@@ -23,6 +23,11 @@ This project is intentionally **simple** — no clutter, no extra fluff.
 - Absolutely **no selling** — 1s and 0s should be free.  
 
 ---
+## --caveat--
+For the pskreporter map to work youll need to deploy this on your hardware. 
+Feel free to download it and read it as a local file on yur browser of choice.
+
+---
 
 ## 📡 Final Words  
 Get your ham license (seriously, the Tech ticket isn’t that hard).  
